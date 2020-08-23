@@ -23,6 +23,10 @@
         display: flex;
         flex-direction: row;
 
+        @include respond(tab-port){
+            height: 100%;
+        }
+
         &_logo{
             height: 100%;
             display: flex;
@@ -32,12 +36,15 @@
 
             &_img{
                 height: 70%;
-                max-height: 100%;
+
+                @include respond(tab-port){
+                    height: 100%;
+                }    
             }
 
             @include respond(tab-port){
-                height: 100%;
-                width: 20%;
+                height: 200%;
+                width: 40%;
             }       
         }
 

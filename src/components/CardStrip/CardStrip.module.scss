@@ -32,7 +32,6 @@
 
         @include respond(big-phone){
             width: 80%;
-            background-color: red;
             height: 17.5rem;
             transform: translateY(-50%);
         }
