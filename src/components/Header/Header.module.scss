@@ -14,7 +14,7 @@
     flex-direction: row;
 
     @include respond(tab-port){
-        padding: 2.5rem 2rem;
+        padding: 0 2rem;
         height: 10vh;
     }
 
@@ -31,7 +31,8 @@
             height: 100%;
             display: flex;
             width: 30%;
-            justify-content: space-between;
+            margin: auto 1rem;
+            justify-content: center;
             align-items: center;
 
             &_img{
@@ -43,7 +44,7 @@
             }
 
             @include respond(tab-port){
-                height: 200%;
+                height: 45%;
                 width: 40%;
             }       
         }
