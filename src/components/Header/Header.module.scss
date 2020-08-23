@@ -1,0 +1,106 @@
+@import "../../sass/mixins";
+
+.main{
+    width: 100%;
+    height: 12.5%;
+    position: relative;
+    background-color: white;
+    padding: 1rem 4rem;
+    box-shadow: rgba(#222, 0.12) 0px 5px 12px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    flex-direction: row;
+
+    @include respond(tab-port){
+        padding: 2.5rem 2rem;
+        height: 10%;
+    }
+
+    &_partA{
+        flex: .6;
+        display: flex;
+        flex-direction: row;
+
+        &_logo{
+            height: 100%;
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+            align-items: center;
+
+            &_img{
+                height: 70%;
+                max-height: 100%;
+            }
+        }
+
+        &_options{
+            width: 70%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: center;
+
+            &_choice{
+                font-size: 1.5rem;
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                margin-right: 2rem;
+                cursor: pointer;
+                color: rgba(118,118,118,1);
+
+                &:hover{
+                    color: rgba(71,71,71,1);
+
+                }
+
+                &:nth-child(1){
+                    color: rgba(255,102,255,1);
+                }
+            }
+
+            @include respond(tab-port){
+                display: none;
+            }
+        }
+    }
+
+    &_partB{
+        flex: .4;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &_container{
+            margin-right: 2rem;
+            width: 12rem;
+            height: 65%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @include respond(tab-port){
+            display: none;
+        }
+    }
+}
+
+.ham{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+    @include respond(tab-port){
+        display: flex;
+    }
+}
