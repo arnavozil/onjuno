@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { PrimaryButton } from '../Widgets/Buttons/Buttons';
 import { Primary as PrimaryInput } from '../Widgets/Inputs/Inputs';
@@ -9,6 +9,12 @@ import {
 import s from './Main.module.scss';
 
 const Main = () => {
+
+    const [email, setEmail] = useState('');
+
+    const onEmailChange = e => {
+        setEmail(e.target.value);
+    }
 
     return (
         <div className={s.main}>
@@ -25,6 +31,8 @@ const Main = () => {
                      children={
                         <PrimaryButton text='Join Now' />
                      }
+                     value={email}
+                     onChange={onEmailChange}
                     />
                     <span className={s.main_text_heading_caption}>
                     <div className={s.main_text_heading_caption_image}>

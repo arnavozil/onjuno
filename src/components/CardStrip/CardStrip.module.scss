@@ -10,12 +10,10 @@
     box-shadow: 5px 18px 64px 0 rgba(0,0,0,.1);
     position: relative;
     margin-top: 10rem;
-    // display: flex;
-    // flex-direction: column;
 
     @include respond(tab-port){
         margin-bottom: 5rem;
-        min-height: 170;
+        min-height: 180vh;
     }
 
     &_overlay{
