@@ -16,6 +16,7 @@
 
     @include respond(tab-port){
         padding: 0 2rem;
+        min-height: 10vh;
         height: 10vh;
     }
 
