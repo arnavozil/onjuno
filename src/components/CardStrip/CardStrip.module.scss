@@ -1,7 +1,7 @@
 @import "../../sass/mixins";
 
 .main{
-    min-height: 165vh;
+    min-height: 170vh;
     background-color: white;
     flex: 1;
     position: relative;
@@ -27,7 +27,7 @@
 
         @include respond(tab-port){
             transform: translate(40%, -50%);
-            height: 20rem;
+            height: 18.5rem;
             width: 40%;
         }
 

@@ -35,17 +35,17 @@ const Main = () => {
                      onChange={onEmailChange}
                     />
                     <span className={s.main_text_heading_caption}>
-                    <div className={s.main_text_heading_caption_image}>
-                        <img
-                         alt="USA Flag" 
-                         srcSet="https://juno-public.s3-us-west-1.amazonaws.com/Juno/createaccount-homeaddress-flag%403x.png"
-                         className={s.main_text_heading_caption_image_img} 
-                         src="https://juno-public.s3-us-west-1.amazonaws.com/Juno/createaccount-homeaddress-flag%403x.png" 
-                        />
-                    </div>
-                    <span className={s.main_text_heading_caption_para}>
-                        333 spots left for Priority Access
-                    </span>
+                        <div className={s.main_text_heading_caption_image}>
+                            <img
+                            alt="USA Flag" 
+                            srcSet="https://juno-public.s3-us-west-1.amazonaws.com/Juno/createaccount-homeaddress-flag%403x.png"
+                            className={s.main_text_heading_caption_image_img} 
+                            src="https://juno-public.s3-us-west-1.amazonaws.com/Juno/createaccount-homeaddress-flag%403x.png" 
+                            />
+                        </div>
+                        <span className={s.main_text_heading_caption_para}>
+                            333 spots left for Priority Access
+                        </span>
                     </span>
                 </div>
                 <div className={s.main_text_icons}>

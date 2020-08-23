@@ -38,7 +38,7 @@
                 align-items: center;
 
                 @include respond(tab-port){
-                    margin-bottom: 3rem;
+                    margin: 4rem 0 4rem 1rem;
                 }
 
                 &_image{
