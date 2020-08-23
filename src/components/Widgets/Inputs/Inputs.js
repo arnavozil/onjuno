@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 import s from './Input.module.scss';
 
@@ -8,6 +8,8 @@ export const Primary = ({
     onChange,
     children,
 }) => {
+
+    const [val, setVal] = useState('');
 
     return (
         <div className={s.primary}>
@@ -21,8 +23,8 @@ export const Primary = ({
             <input 
                 className={s.primary_input}
                 placeholder={placeholder}
-                onChange={onChange}
-                value={value}
+                onChange={e=>setVal(e.target.value)}
+                value={val}
             />
             <span className={s.primary_child}>
                 {children}
