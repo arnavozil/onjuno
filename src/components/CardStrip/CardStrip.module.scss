@@ -13,7 +13,7 @@
 
     @include respond(tab-port){
         margin-bottom: 5rem;
-        min-height: 2000vh;
+        min-height: 200vh;
     }
 
     &_overlay{
@@ -217,7 +217,8 @@
 
     &_foot{
         padding: 1.5rem 4rem;
-        height: 10rem;
+        height: 15rem;
+        min-height: 15rem;
         display: flex;
         bottom: 0;
         width: 100%;
