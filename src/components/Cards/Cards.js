@@ -92,7 +92,6 @@ const Cards = () => {
                     cardType='premium'
                     interest={[1.65, 2]}
                     cashback={4}
-                    list={listItems2}
                     maxSpots={2000}
                     info={info2}
                     buttonText='Up Next'

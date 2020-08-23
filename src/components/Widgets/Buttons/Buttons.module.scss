@@ -3,6 +3,9 @@
 .primary{
     background-color: $color-primary;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .secondary{
