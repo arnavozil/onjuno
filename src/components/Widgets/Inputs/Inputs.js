@@ -5,7 +5,7 @@ import s from './Input.module.scss';
 export const Primary = ({
     placeholder = 'Enter...',
     value = '',
-    onChange = () => {},
+    onChange,
     children,
 }) => {
 
